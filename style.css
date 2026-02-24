@@ -1,0 +1,90 @@
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+      background-image: url(https://img.freepik.com/free-vector/clean-medical-background_53876-116875.jpg);
+      background-size: cover;
+    }
+
+    .container {
+      background: #fff;
+      width: 550px;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .question {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      padding: 5px;
+      cursor: pointer;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 6px;
+      display: none;
+    }
+
+    .blue {
+      background: hsl(214, 49%, 71%);
+      color: #1e40af;
+    }
+
+    .yellow {
+      background: hsl(48, 96%, 89%);
+      color: #984816;
+    }
+
+    .red {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .note {
+      font-size: 12px;
+      color: gray;
+      text-align: center;
+      margin-top: 10px;
+    }
+#nextBtn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#nextBtn:hover {
+  opacity: 0.9;
+}
+
