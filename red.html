@@ -3,71 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consult Doctor</title>
+  <title>Consult Doctor</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fee2e2;
+      text-align: center;
+      padding: 16px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background-color: rgb(229, 161, 161);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 16px auto;
+      max-width: 800px;
+      text-align: left;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;           /* 👈 stacks on mobile */
+      justify-content: center;
+    }
+
+    .box {
+      background-color: rgb(229, 161, 161);
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 12px;
+      text-align: left;
+      flex: 1 1 280px;           /* 👈 responsive columns */
+    }
+
+    .alert {
+      background-color: rgb(228, 151, 151);
+      border: 2px solid #e45454;
+    }
+
+    .helpline {
+      color: red;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #1d4ed8;
+      word-break: break-word;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 18px;
+      }
+
+      .card, .box {
+        font-size: 14px;
+      }
+
+      body {
+        padding: 10px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family:Arial; background:#fee2e2; text-align:center; padding:50px;">
+
+<body>
+
   <h1>🔴 Doctor Consultation Suggested</h1>
   <p>Please consider talking to a healthcare professional ❤️</p>
-  <div style="
-   background-color: rgb(229, 161, 161);
-   border: 1px solid #ccc;
-   border-radius: 10px;
-   padding: 20px;
-   margin: 20px auto;
-   max-width: 800px;
-   text-align:justify;
-    ">
-        <p>This is the <b>"Critical"</b> level.  The user is experiencing significant emotional strain that may be impacting their daily functioning and overall well-being.The NLP (Natural Language Processing) system has detected "High Risk" keywords, intent, or behaviors that suggest immediate danger.</p>
-        <p>At this stage, the user may be experiencing symptoms such as persistent sadness, anxiety, difficulty sleeping or eating, and a noticeable decline in their ability to function normally in daily life.</p>
-        <p>It's important to note that while the user is currently in the critical category, seeking professional help is essential. This includes consulting with a mental health professional such as a psychologist or psychiatrist who can provide appropriate diagnosis and treatment options.</p>
-        <ul>
-            <li><b>Objective : </b>To save lives through <b>Immediate Medical Intervention</b>.</li>
-            <li><b>AI Action : </b>The system bypasses normal conversation and enters <b>Emergency Mode</b>.</li>
-        </ul>      
-   </div>
-   <div style="width:600px; align-items:center; margin: 20px auto;">
-   <div style="   
-   background-color: rgb(229, 161, 161);
-   border: 1px solid #ccc;
-   border-radius: 5px;
-   padding: 10px;
-   margin-top: 10px;
-   text-align:left;">
-     <p>The recommended next steps are:</p>
-    <ul type="square">
-      <li> Consider speaking to a college counsellor or therapist.</li>
-      <li> Share how you feel with a trusted friend or family member.</li>
-      <li> Create a structured daily routine with dedicated self‑care time.</li>
-      <li> Limit excessive screen time and social media use.</li>
-      <li> Explore guided meditation or stress‑relaxation exercises.</li>
+
+  <div class="card">
+    <p>This is the <b>"Critical"</b> level. The user is experiencing significant emotional strain that may be impacting their daily functioning and overall well-being. The NLP (Natural Language Processing) system has detected "High Risk" keywords, intent, or behaviors that suggest immediate danger.</p>
+
+    <p>At this stage, the user may be experiencing symptoms such as persistent sadness, anxiety, difficulty sleeping or eating, and a noticeable decline in their ability to function normally in daily life.</p>
+
+    <p>It's important to note that while the user is currently in the critical category, seeking professional help is essential. This includes consulting with a mental health professional such as a psychologist or psychiatrist who can provide appropriate diagnosis and treatment options.</p>
+
+    <ul>
+      <li><b>Objective :</b> To save lives through <b>Immediate Medical Intervention</b>.</li>
+      <li><b>AI Action :</b> The system bypasses normal conversation and enters <b>Emergency Mode</b>.</li>
     </ul>
+  </div>
+
+  <div class="wrapper">
+    <div class="box">
+      <p><b>The recommended next steps are:</b></p>
+      <ul>
+        <li>Consider speaking to a college counsellor or therapist.</li>
+        <li>Share how you feel with a trusted friend or family member.</li>
+        <li>Create a structured daily routine with dedicated self-care time.</li>
+        <li>Limit excessive screen time and social media use.</li>
+        <li>Explore guided meditation or stress-relaxation exercises.</li>
+      </ul>
     </div>
-  <div style="   background-color: rgb(228, 151, 151);
-   border: 2px solid #e45454;
-   border-radius: 5px;
-   padding: 10px;
-   margin-top: 10px;
-   text-align:left;
-   display:inline-block;">
-    <p>Your responses suggest significant emotional distress. Please reach out to a mental health professional immediately. You are not alone, and help is available.</p>
-        <p style="color: red;"><b>HELPLINES (INDIA)</b></p>
-        <p>iCall : <a href="tel:9152987821">9152987821</a> <br> <span style="font-size: small;">(Mon–Sat, 8am–10pm)</span><br></p>
-        <p>Vandrevala Foundation : <a href="tel:18602662345">1860-2662-345</a> <br><span style="font-size: small;">(24/7, multilingual)</span></p>
-        <p>AASRA : <a href="tel:9820466726">9820466726</a> <br><span style="font-size: small;">(24/7)</span></p>    
+
+    <div class="box alert">
+      <p>Your responses suggest significant emotional distress. Please reach out to a mental health professional immediately. You are not alone, and help is available.</p>
+
+      <p class="helpline">HELPLINES (INDIA)</p>
+      <p>Epic Mind Center : <a href="https://epicmindcenter.com/about-us/">Details</a></p>
+      <p>
+        Dr. Sumegha Dikshit : <a href="tel:7082025***">7082028***</a><br>
+        <small>(MBBS, AIIMS Rishikesh | MD Psychiatry, AIIMS Delhi)</small>
+      </p>
+      <p>Email : <a href="mailto:mittalsumegha19@gmail.com">mittalsumegha19@gmail.com</a></p>
     </div>
-</div>
-</div>
-    <div>
-    <a href="index.html" style="
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #4CAF50;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 20px;
-    ">Retake the Test</a>
-    </div>
+  </div>
+
+  <a href="index.html" class="btn">Retake the Test</a>
 
 </body>
 </html>
