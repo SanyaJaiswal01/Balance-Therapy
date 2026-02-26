@@ -2,7 +2,7 @@
     e.preventDefault();
 
     let total = 0;
-    let count = 10;
+    let count = 12;
 
     for (let i = 1; i <= count; i++) {
       let selected = document.querySelector(`input[name="q${i}"]:checked`);
@@ -44,5 +44,6 @@
       window.location.href = redirectUrl;
     };
   });
+
 
   
